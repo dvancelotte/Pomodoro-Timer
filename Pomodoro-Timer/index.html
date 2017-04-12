@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Pomodor Timer</title>
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/pomodoroTimer.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
+    
+    <body>
+        
+        <div class="pomodoro text-center">
+            <h1><b>Pomodoro timer</b></h1>
+            <div class="time" id="time">25:00</div>
+            <button type="button" class="load" id="load"><div id="status">START</div></button>
+            <hr>
+            <h2><b>SESSION LENGTH</b></h2>
+            <div class="length">
+                <button type="button" class="btn" onclick='changeTimer("session",1)'><b>+</b></button>
+                <div class="session" id="session">25</div>
+                <button type="button" class="btn" onclick='changeTimer("session",0)'><b>-</b></button>
+            </div>
+            <hr>
+            <h2><b>BREAK LENGTH</b></h2>
+            <div class="length">
+                <button type="button" class="btn" onclick='changeTimer("break",1)'><b>+</b></button>
+                <div class="break" id="break">10</div>
+                <button type="button" class="btn" onclick='changeTimer("break",0)'><b>-</b></button>
+            </div>
+            
+        </div>
+        
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/pomodoro.js"></script>
+    <script language="javascript">
+    </script>
+        
+    
+    </body>

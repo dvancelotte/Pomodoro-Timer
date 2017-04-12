@@ -1,0 +1,43 @@
+situation = 0;
+minutes = -1;
+seconds = -1;
+
+// 0 - stop ; 1 - started ;
+
+function countdown(kindTime){
+    
+     console.log('countdown Minutes ' + minutes);
+    if(kindTime==0){
+        if(seconds--<0){
+            seconds=59;
+            minutes--;
+        }
+        else{
+            seconds --;
+        }
+    }
+    
+    if(minutes>=0){
+        document.getElementById("time").innerHTML = minutes + ':' + seconds;
+    }
+}
+
+function Pomodoro(s){
+    
+    situation = s;
+    
+    if (situation==0){
+        minutes = parseInt(document.getElementById("session").innerHTML);
+        seconds = 0;
+        
+    }
+    
+}
+
+
+$(document).ready(function() {
+
+    
+   
+     
+});
